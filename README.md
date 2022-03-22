@@ -6,18 +6,22 @@ This project uses the [`wiktorn/overpass-api`](https://hub.docker.com/r/wiktorn/
 
 ## Getting started
 
-To spin up a container using a custom configuration, first make sure to pull the latest version of the image on a machine with Docker ready:
+### Setup ComputeCanada instance
+
+Run the following command to prepare things on the VM.
 
 ```sh
-docker pull wiktorn/overpass-api
+sudo apt-get update && apt-get install git && git clone https://github.com/CUPUM/geosearch-api.git ws && cd "$_" && ./setup.sh
 ```
 
-Run it using [run.sh](run.sh):
+### Setup and run Overpass API Docker
+
+To spin up a container using a custom configuration, we first make sure to pull the latest version of the image on the Docker-ready machine and run it:
 
 ```sh
-./run.sh
+./overpass.sh
 ```
 
 ## To do
 
-...
+- [ ] Prepare a preconfigured VM image for ComputeCanada?

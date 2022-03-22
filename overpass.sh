@@ -1,3 +1,5 @@
+apt-get update
+docker pull wiktorn/overpass-api
 docker run \
 	-e OVERPASS_META=yes \
 	-e OVERPASS_MODE=clone \
@@ -6,4 +8,5 @@ docker run \
 	-p 12346:80 \
 	-i -t \
 	--name overpass_world \
-	wiktorn/overpass-api
+	wiktorn/overpass-api \
+	--flush-size=1
