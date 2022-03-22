@@ -1,19 +1,19 @@
 # Make sure things are nice and fresh before we proceed.
-apt-get update
-apt-get upgrade
+sudo apt-get update
+sudo apt-get upgrade
 # Hello docker.
 echo "Installing deps required for docker setup..."
-apt-get install \
+sudo apt-get install \
 	ca-certificates \
 	curl \
 	gnupg \
 	lsb-release
-curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
-echo \
+sudo curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+sudo echo \
 	"deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian \
 	$(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 echo "Getting Docker in place..."
-apt-get update
-apt-get install docker-ce docker-ce-cli containerd.io
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io
 # GJ
 echo -n "VM setup is complete, you can now proceed to setup the Overpass API Docker using with overpass.sh"

@@ -11,7 +11,7 @@ This project uses the [`wiktorn/overpass-api`](https://hub.docker.com/r/wiktorn/
 Run the following command to prepare things on the VM.
 
 ```sh
-apt-get update \
+sudo apt-get update \
     && sudo apt-get install git \
     && git clone https://github.com/CUPUM/geosearch-api.git ws \
     && cd "$_" \
