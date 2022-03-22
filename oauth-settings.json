@@ -1,6 +1,0 @@
-{
-	"user": "cupum",
-	"password": "your-secure-password",
-	"osm_host": "https://www.openstreetmap.org",
-	"consumer_url": "https://osm-internal.download.geofabrik.de/get_cookie"
-  }
