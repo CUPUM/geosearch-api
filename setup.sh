@@ -1,6 +1,5 @@
 # Make sure things are nice and fresh before we proceed.
 sudo apt-get update
-sudo apt-get upgrade
 # Hello docker.
 echo "Installing deps required for docker setup..."
 sudo apt-get install \
