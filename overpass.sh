@@ -2,7 +2,7 @@ sudo apt-get update
 echo -n "Pulling docker image..." -n
 sudo docker pull wiktorn/overpass-api
 echo -n "Running docker image..." -n
-sudo nohup docker run \
+sudo docker run \
 	-e OVERPASS_MODE=clone \
 	-e OVERPASS_META=yes \
 	-e OVERPASS_DIFF_URL=https://planet.openstreetmap.org/replication/minute/ \
