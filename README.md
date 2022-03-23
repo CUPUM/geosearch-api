@@ -15,7 +15,7 @@ sudo apt-get update \
     && sudo apt-get install git \
     && git clone https://github.com/CUPUM/geosearch-api.git ws \
     && cd "$_" \
-    && sudo ./setup.sh
+    && sudo bash ./setup.sh
 ```
 
 Initialize the db and spin up a container:
