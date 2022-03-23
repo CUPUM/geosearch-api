@@ -6,6 +6,6 @@ sudo docker run \
 	-e OVERPASS_FLUSH_SIZE=1 \
 	-e OVERPASS_RULES_LOAD=10 \
 	-v /volume/data/overpass/:/db \
-	-p 9000:80 \
+	-p 8888:80 \
 	-i -t \
 	--name overpass_monaco wiktorn/overpass-api
