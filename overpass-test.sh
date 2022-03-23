@@ -1,4 +1,4 @@
-sudo docker run \
+sudo nohup docker run \
 	-e OVERPASS_META=yes \
 	-e OVERPASS_MODE=init \
 	-e OVERPASS_PLANET_URL=http://download.geofabrik.de/europe/monaco-latest.osm.bz2 \
