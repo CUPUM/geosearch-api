@@ -1,7 +1,7 @@
 sudo apt-get update
-echo "Pulling docker image..."
+echo -n "Pulling docker image..." -n
 sudo docker pull wiktorn/overpass-api
-echo "Running docker image..."
+echo -n "Running docker image..." -n
 sudo docker run \
 	-e OVERPASS_MODE=clone \
 	-e OVERPASS_META=yes \
@@ -9,7 +9,7 @@ sudo docker run \
 	-e OVERPASS_MAX_TIMEOUT=10000s \
 	-e OVERPASS_SPACE=8053063680 \
 	-e OVERPASS_FLUSH_SIZE=1 \
-	-v /media/overpass/:/db \
+	-v /volume/data/overpass/:/db \
 	-p 12345:80 \
 	-i -t \
 	--restart unless-stopped \

@@ -6,7 +6,7 @@ This project uses the [`wiktorn/overpass-api`](https://hub.docker.com/r/wiktorn/
 
 ## Getting started
 
-### Setup ComputeCanada instance
+### Setup the WebAPI using NGINX
 
 Run the following command to prepare things on the VM.
 
@@ -18,9 +18,7 @@ sudo apt-get update \
     && sudo ./setup.sh
 ```
 
-### Setup and run Overpass API Docker
-
-To spin up a container using a custom configuration, we first make sure to pull the latest version of the image on the Docker-ready machine and run it:
+Initialize the db and spin up a container:
 
 ```sh
 ./overpass.sh
